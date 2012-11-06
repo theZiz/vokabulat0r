@@ -235,7 +235,7 @@ int main(int argc,char* args[])
 		printf("Can't open %s\n",args[1]);
 		return 2;
 	}
-	printf("Reading %s and formating to cyrilic font\n");
+	printf("Reading %s and formating to cyrilic font\n",args[1]);
 	char line[256];
 	while (fgets(line, 256, file) != NULL)
 	{
@@ -250,11 +250,20 @@ int main(int argc,char* args[])
 	int b = 0;
 	while (firstElement)
 	{
-		printf("%i of %i+%i: %s? ",a+1,count,b,firstElement->word);
-		getchar();
-		printf("\"%s\" (\"%s\")",firstElement->pron,firstElement->pran);
-		getchar();
-		printf("-> %s ",firstElement->mean);
+		if (argc < 3)
+		{
+			printf("%i of %i+%i: %s? ",a+1,count,b,firstElement->word);
+			getchar();
+			printf("\"%s\" (\"%s\")",firstElement->pron,firstElement->pran);
+			getchar();
+			printf("-> %s ",firstElement->mean);
+		}
+		else
+		{
+			printf("%i of %i+%i: %s? ",a+1,count,b,firstElement->mean);
+			getchar();
+			printf("-> %s (\"%s\", \"%s\") ",firstElement->word,firstElement->pron,firstElement->pran);
+		}
 		char input[256];
 		scanf ("%s",input);  
 		getchar();
