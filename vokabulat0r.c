@@ -42,14 +42,14 @@ pElement lastElement = NULL;
 
 typedef char unicode[10];
 
-#define PATTERN_COUNT 71
+#define PATTERN_COUNT 72
 
 const unicode pattern[PATTERN_COUNT] =
-	{PRO_MARK," ","?",",","!",
+	{PRO_MARK," ","?",",","!","-",
 	 "А","Б","В","Г","Д","Е", "Ж","З","И","Й","К","Л","М","Н","О","П","Р","С","Т","У","Ф", "Х", "Ц",   "Ч",  "Ш",      "Щ","Ъ", "Ы","Ь","Э", "Ю", "Я", "Ё",
 	 "а","б","в","г","д","е", "ж","з","и","й","к","л","м","н","о","п","р","с","т","у","ф", "х", "ц",   "ч",  "ш",      "щ","ъ", "ы","ь","э", "ю", "я", "ё"};
 const unicode solution[PATTERN_COUNT] =
-	{PRO_MARK," ","?",",","!",
+	{PRO_MARK," ","?",",","!","-",
 	 "A","B","W","G","D","E","Ch","S","I","J","K","L","M","N","O","P","R","ẞ","T","U","F","Ch","Ts","Tsch","Sch","Schtsch", "","Ui", "","Ä","Ju","Ja","Jo",
 	 "a","b","w","g","d","e","ch","s","i","j","k","l","m","n","o","p","r","ß","t","u","f","ch","ts","tsch","sch","schtsch", "","ui", "","ä","ju","ja","jo"};
 
@@ -62,7 +62,7 @@ int testForPron(char* input)
 {
 	for (int i = 0; i < PATTERN_COUNT; i++)
 	{
-		char* pat = pattern[i];
+		const char* pat = pattern[i];
 		int c;
 		for (c = 0; pat[c]!= 0; c++)
 			if (pat[c] != input[c])
@@ -87,7 +87,8 @@ void createPran(char* output,char* input)
 {
 	//Searching for the prouncing
 	int pos = -1;
-	for (int i = 0; input[i] != 0; i++)
+	int i;
+	for (i = 0; input[i] != 0; i++)
 		if (input[i] == PRO_MARK_1 && input[i+1] == PRO_MARK_2)
 			pos = i;
 	if (pos == -1)
@@ -95,12 +96,14 @@ void createPran(char* output,char* input)
 		sprintf(output,"%s",input);
 		return;
 	}
-	for (int i = 0; i < pos-1 && input[i] != 0; i++)
+	for (i = 0; i < pos-1 && input[i] != 0; i++)
 		if (input[i] == 'o')
 			output[i] = 'a';
 		else
 			output[i] = input[i];
-	for (int i = pos+2; input[i] != 0; i++)
+	for (; i < pos+2 && input[i] != 0; i++) //The marks
+		output[i] = input[i];
+	for (; input[i] != 0; i++)
 		if (input[i] == 'o')
 			output[i] = 'e';
 		else
@@ -237,7 +240,7 @@ int main(int argc,char* args[])
 	while (fgets(line, 256, file) != NULL)
 	{
 		pElement element = parse(line);
-		printf("Added %s (%s) = %s\n",element->word,element->pron,element->mean);
+		printf("Added %s (%s, %s) = %s\n",element->word,element->pron,element->pran,element->mean);
 	}
 	fclose(file);
 	printf("Shuffling...");
