@@ -157,7 +157,7 @@ pElement parse(char* line)
 	return element;
 }
 
-#define SHUFFLE_DEEP 1000
+#define SHUFFLE_DEEP 5000
 
 void shuffle()
 {
@@ -223,26 +223,32 @@ int main(int argc,char* args[])
 	srand(time(NULL));
 	printf("Welcome to \033[1;31mVokabulat0r\033[0m version %s.\n",VERSION);
 	printf("Use: vokabulat0r file\n");
+	int normal_way = 1;
 	if (argc < 2)
 	{
 		printf("No file\n");
 		return 1;
 	}
-	FILE* file;
-	file = fopen(args[1],"rt");
-	if (!file)
+	int i;
+	for (i = 1; i < argc; i++)
 	{
-		printf("Can't open %s\n",args[1]);
-		return 2;
+		FILE* file;
+		file = fopen(args[i],"rt");
+		if (!file)
+		{
+			printf("Can't open %s... So changing to other mode.\n",args[i]);
+			normal_way = 0;
+			continue;
+		}
+		printf("Reading %s and formating to cyrilic font\n",args[i]);
+		char line[256];
+		while (fgets(line, 256, file) != NULL)
+		{
+			pElement element = parse(line);
+			printf("Added %s (%s, %s) = %s\n",element->word,element->pron,element->pran,element->mean);
+		}
+		fclose(file);
 	}
-	printf("Reading %s and formating to cyrilic font\n",args[1]);
-	char line[256];
-	while (fgets(line, 256, file) != NULL)
-	{
-		pElement element = parse(line);
-		printf("Added %s (%s, %s) = %s\n",element->word,element->pron,element->pran,element->mean);
-	}
-	fclose(file);
 	printf("Shuffling...");
 	shuffle();
 	printf("done\n");
@@ -250,7 +256,7 @@ int main(int argc,char* args[])
 	int b = 0;
 	while (firstElement)
 	{
-		if (argc < 3)
+		if (normal_way)
 		{
 			printf("%i of %i+%i: %s? ",a+1,count,b,firstElement->word);
 			getchar();
