@@ -1,0 +1,40 @@
+ба_бушка		Großmutter
+брат			Bruder
+внук			Enkel
+вну_чка			Enkelin
+говори_ть		sprechen
+де_душка		Großvater
+де_лать			machen, tun
+дочь			Tochter
+дя_дя			Onkel
+жена_			(Ehe-)Frau
+как				wie
+ку_рица			Huhn
+ла_па			Klaue, Pfote
+люби_ть			lieben, mögen, gern haben
+ма_ма			Mama, Mutter
+мать			Mutter
+мо_ре			Meer
+муж				(Ehe-)Mann
+не_бо			Himmel
+отдыха_ть		sich erholen, sich ausruhen
+оте_ц			Vater
+па_па			Papa, Vati
+писа_ть			schreiben
+пло_хо			schlecht
+по-неме_цки		auf Deutsch
+по-ру_сски		auf Russisch
+рисова_ть		malen
+сейча_с			jetzt
+семья_			Familie
+сестра_			Schwester
+смотре_ть		schauen, sehen
+сын				Sohn
+телеви_зор		Fernseher
+тётя			Tante
+то_же			auch
+университе_т	Universität
+фотографи_роваться	fotografiert werden
+хорошо_			gut, schön
+чита_ть			lesen
+Что вам уго_дно?	Was wünschen Sie?
