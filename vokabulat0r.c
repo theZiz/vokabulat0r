@@ -33,6 +33,8 @@ typedef struct sElement {
 	char pron[128];
 	char pran[128];
 	char mean[128];
+	char whole_line[512];
+	char was_saved;
 	pElement before;
 	pElement next;
 } tElement;
@@ -42,14 +44,14 @@ pElement lastElement = NULL;
 
 typedef char unicode[10];
 
-#define PATTERN_COUNT 72
+#define PATTERN_COUNT 73
 
 const unicode pattern[PATTERN_COUNT] =
-	{PRO_MARK," ","?",",","!","-",
+	{PRO_MARK," ","?",",","!","-","…",
 	 "А","Б","В","Г","Д","Е", "Ж","З","И","Й","К","Л","М","Н","О","П","Р","С","Т","У","Ф", "Х", "Ц",   "Ч",  "Ш",      "Щ","Ъ", "Ы","Ь","Э", "Ю", "Я", "Ё",
 	 "а","б","в","г","д","е", "ж","з","и","й","к","л","м","н","о","п","р","с","т","у","ф", "х", "ц",   "ч",  "ш",      "щ","ъ", "ы","ь","э", "ю", "я", "ё"};
 const unicode solution[PATTERN_COUNT] =
-	{PRO_MARK," ","?",",","!","-",
+	{PRO_MARK," ","?",",","!","-","…",
 	 "A","B","W","G","D","E","Ch","S","I","J","K","L","M","N","O","P","R","ẞ","T","U","F","Ch","Ts","Tsch","Sch","Schtsch", "","Ui", "","Ä","Ju","Ja","Jo",
 	 "a","b","w","g","d","e","ch","s","i","j","k","l","m","n","o","p","r","ß","t","u","f","ch","ts","tsch","sch","schtsch", "","ui", "","ä","ju","ja","jo"};
 
@@ -126,6 +128,8 @@ pElement parse(char* line)
 	element->pron[0] = 0;
 	element->pran[0] = 0;
 	element->mean[0] = 0;
+	element->was_saved = 0;
+	sprintf(element->whole_line,"%s",line);
 	//Converting to cyrilic:
 	//Searching \t or ' '
 	char* found = strchr ( line, '\t');
@@ -278,6 +282,11 @@ int main(int argc,char* args[])
 		firstElement = firstElement->next;
 		if (input[0] == 'n')
 		{
+			if (element->was_saved == 0)
+			{
+				fprintf(stderr,"%s",element->whole_line);
+				element->was_saved = 1;
+			}
 			lastElement->next = element;
 			element->before = lastElement;
 			element->next = NULL;

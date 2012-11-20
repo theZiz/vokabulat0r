@@ -2,46 +2,46 @@
 балко_н						Balkon
 в							in
 ва_нная						Badezimmer
-ваш, ва_ша, ва_ше			euer, eure, euer; Ihr, Ihre, Ihr (zu Вы)
+ваш, ва_ша, ва_ше			euer, eure, euer; Ihr, Ihre, Ihr (zu Вы)
 вот							hier, da
 гости_ная					Wohnzimmer
-гуля_ть, -ю, ешь, ..., ют	spazieren (gehen)
+гуля_ть, -ю, ешь, …, ют		spazieren (gehen)
 два							zwei
 день						Tag
 дива_н						Sofa, Couch
 До_брый день!				Guten Tag!
 дом							Haus
 его_						sein, seine, sein (zu он)
-её							ihre, ihre, ihr (zu она_)
+её							ihr, ihre, ihr (zu она_)
 же							denn
-жить, живу_, живёшь, ..., -у_т	leben, wohnen
-знать, -ю, -ешь, ..., -ют	wissen, kennen
+жить, живу_, живёшь, …, -у_т	leben, wohnen
+знать, -ю, -ешь, …, -ют		wissen, kennen
 их							ihr, ihre, ihr (zu они_)
-Как пожива_ете?				Guten Tag!
+Как пожива_ете?				Wie geht es Ihnen?
 кварти_ра					Wohnung
 ко_мната					Zimmer
 коридо_р					Flur, Korridor
 кре_сло						Sessel
 ку_хня						Küche
-лежа_ть, лежу_, -и_шь, ..., -а_т	liegen
-мой, моя_, моё				mein, meine, mein (zu я)
+лежа_ть, лежу_, -и_шь, …, -а_т	liegen
+мой, моя_, моё				mein, meine, mein (zu я)
 на							auf, in
-на мо_ре					am Meer
-наш, на_ша, на_ше			unser, unsere, unser (zu мы)
+на мо_ре					am Meer
+наш, на_ша, на_ше			unser, unsere, unser (zu мы)
 но_мер						Nummer
 оди_н						eins, ein
 парк						Park
 пол							(Fuß-)Boden
 по_лка						Regal
 рабо_та						Arbeit
-рабо_тать, -ю, -ешь, ..., -ют	arbeiten
-разгова_ривать, -ю, -ешь, ..., -ют	reden, sich unterhalten, sprechen
-сиде_ть, сижу_, сиди_шь, ..., -я_т	sitzen
+рабо_тать, -ю, -ешь, …, -ют	arbeiten
+разгова_ривать, -ю, -ешь, …, -ют	reden, sich unterhalten, sprechen
+сиде_ть, сижу_, сиди_шь, …, -я_т	sitzen
 Смотри_!					Schau!, Sieh!
 соба_ка						Hund
 сосе_л						Nachbar
 спа_льня					Schlafzimmer
 спаси_бо					danke
-твой, твоя, твоё			dein, deine, dein (zu ты)
+твой, твоя, твоё			dein, deine, dein (zu ты)
 туале_т						Toilette
-чей? чья? чьё?				wessen?
+чей? чья? чьё?				wessen?

@@ -11,7 +11,7 @@
 как				wie
 ку_рица			Huhn
 ла_па			Klaue, Pfote
-люби_ть			lieben, mögen, gern haben
+люби_ть, люблю_, лю_блишь, …, -ят	lieben, mögen, gern haben
 ма_ма			Mama, Mutter
 мать			Mutter
 мо_ре			Meer
@@ -20,11 +20,11 @@
 отдыха_ть		sich erholen, sich ausruhen
 оте_ц			Vater
 па_па			Papa, Vati
-писа_ть			schreiben
+писа_ть, пишу_, пи_шешь, …, -ут		schreiben
 пло_хо			schlecht
 по-неме_цки		auf Deutsch
 по-ру_сски		auf Russisch
-рисова_ть		malen
+рисова_ть, рису_ю, рисуешь, …, -ят	malen
 сейча_с			jetzt
 семья_			Familie
 сестра_			Schwester
