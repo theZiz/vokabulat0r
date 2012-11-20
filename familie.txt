@@ -7,3 +7,4 @@
 Сколько вам лет?	Wie alt bist du?
 Мне 24 года.		Ich bin 24 Jahre.
 Кто ты по профессии?	Was tust du?
+учился				studieren
