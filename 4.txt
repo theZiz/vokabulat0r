@@ -38,7 +38,7 @@
 накрыва_ть на стол		den Tisch decken
 напи_ток, напи_тка, напи_тки	Getränk
 нож, -и_, ей			Messer
-обе_ц					Mittagsessen, Hauptmahlzeit
+обе_д					Mittagsessen, Hauptmahlzeit
 обе_дать				zu Mittag essen
 обы_чно					gewöhnlich, üblicherweise
 о_вощи, -е_й			Gemüse
