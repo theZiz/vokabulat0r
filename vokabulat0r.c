@@ -87,29 +87,49 @@ void createPron(char* output,char* input)
 
 void createPran(char* output,char* input)
 {
+	output[0] = 0;
+	int start;
+	int end = -1;
 	//Searching for the prouncing
-	int pos = -1;
-	int i;
-	for (i = 0; input[i] != 0; i++)
-		if (input[i] == PRO_MARK_1 && input[i+1] == PRO_MARK_2)
-			pos = i;
-	if (pos == -1)
+	while (end == -1 || input[end] != 0)
 	{
-		sprintf(output,"%s",input);
-		return;
+		start = end + 1;
+		int pos = -1;
+		int i;
+		for (i = start; input[i] != 0 && input[i] != ' '; i++)
+			if (input[i] == PRO_MARK_1 && input[i+1] == PRO_MARK_2)
+				pos = i;
+		end = i;
+		if (pos == -1)
+		{
+			for (i = start; i < end; i++)
+				output[i] = input[i];
+			if (input[end] == ' ')
+				output[end] = ' ';
+			else
+				output[end] = 0;
+			continue;
+		}
+		//Setting before the prouncing
+		for (i = start; i < pos-1; i++)
+			if (input[i] == 'o')
+				output[i] = 'a';
+			else
+				output[i] = input[i];
+		//Setting the prouncing
+		for (; i < pos+2 && i < end; i++) //The marks
+			output[i] = input[i];
+		//Setting after the prouncing
+		for (; i < end; i++)
+			if (input[i] == 'o')
+				output[i] = 'e';
+			else
+				output[i] = input[i];
+		if (input[end] == ' ')
+			output[end] = ' ';
+		else
+			output[end] = 0;				
 	}
-	for (i = 0; i < pos-1 && input[i] != 0; i++)
-		if (input[i] == 'o')
-			output[i] = 'a';
-		else
-			output[i] = input[i];
-	for (; i < pos+2 && input[i] != 0; i++) //The marks
-		output[i] = input[i];
-	for (; input[i] != 0; i++)
-		if (input[i] == 'o')
-			output[i] = 'e';
-		else
-			output[i] = input[i];
 }
 
 
