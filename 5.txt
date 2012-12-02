@@ -2,7 +2,7 @@
 всё						alles, ganz
 вся						ganz
 весь					ganz
-го_рол, -а (Nom. Pl.)	Stadt
+го_род, -а (Nom. Pl.)	Stadt
 гостеприи_мство			Gastfreundschaft
 далеко_					weit
 де_ти, -е_й (Gen.)		Kinder
@@ -47,7 +47,7 @@
 хозя_ин, хозя_ева (Nom. Pl.)	Gastgeber
 хозя_йка, -и (Nom. Pl.), хозя_ек (Gen. Pl.)	Gastgeberin
 центр					Zentrum
-ч_ашка, -и (Nom. Pl.), -шек (Gen. Pl.)	Tasse
+ча_шка, -и (Nom. Pl.), -шек (Gen. Pl.)	Tasse
 что						dass
 чьи? (Pl.)				wessen?
 Э_то что за у_лица?		Was für eine Straße ist das?
