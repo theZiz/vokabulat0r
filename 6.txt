@@ -3,7 +3,7 @@
 акваре_льная кра_ска	Aquarellfarbe
 анке_та				Fragenbogen
 архитекту_ра		Architektur
-без	+ Gen.			ohne
+без + Gen.			ohne
 бе_лый				weiß		
 брать, беру, -ёшь, …, -ут	nehmen
 в					am
@@ -79,7 +79,7 @@
 предпочита_ть		vorziehen, bevorzugen
 прекра_сный			schön
 приро_да			Natur
-проводи_ть, провожу_, -во_дишь, …,-ят	im Freien, draußen
+проводи_ть, провожу_, -во_дишь, …,-ят	verbringen (die Zeit)
 провожа_ть			zum Bahnhof bringen, verabschieden
 пти_ца				Vogel
 пя_тница			Freitag
