@@ -1,0 +1,20 @@
+еда_					Essen
+есть, ем, ешь, ест, еди_м, еди_те, едя_т	essen
+ждать, жду, ждёмь, …, -ут	warten
+за_втрак, -и				Frühstück
+за_втракать				frühstücken
+затем					dann
+зачем?					wozu? warum?
+идти_, иду_, идёшь, …, иду_т	gehen
+из + Gen				aus
+кафе_ indekl.			Café, Kaffeehaus
+когда_?					wann?
+кого_?					Gen./Akk. von KTO?
+куда_?					wohin?
+лимона_д				Limonade
+ло_жка, -и				Löffel
+молоко_					Milch
+мука_					Mehl
+накрыва_ть на стол		den Tisch decken
+напи_ток, напи_тка, напи_тки	Getränk
+нож, -и_, ей			Messer

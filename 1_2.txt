@@ -1,0 +1,22 @@
+капита_н								Kapitän
+ка_рта									Karte, Landkarte
+кни_га									Buch
+кто?										Wer?
+ла_мпа									Lampe
+лю_ди										Menschen, Leute
+меня_ зову_т…						Mein Name (ist)
+мы											wir
+не											nicht
+не_мец, не_мцы					Deutscher
+не_мка, не_мки					Deutsche
+нет											Nein
+Ничего_.								Macht nichts.
+окно_										Fenster
+он											er
+она_										sie
+оно_										es
+они_										sie (pl.)
+о_чень									sehr
+письмо_									Brief
+пожа_луйста							bitte
+Познако_мьтесь, пожа_луйста!	Machen Sie sich bitte miteinander bekannt!
